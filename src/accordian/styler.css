@@ -1,0 +1,62 @@
+.accor {
+  margin: 10px;
+  transition: 0.4s;
+}
+.accor .head {
+  padding: 5px 10px;
+  float: right;
+  margin-top: -20px;
+}
+.accor .body {
+  background-color: #1a2d51;
+  padding: 0 20px;
+  max-height: 0;
+  /* overflow: hidden; */
+  transition: 200ms ease-in-out;
+  display: block;
+  width: 95%;
+  position: absolute;
+  left: 0;
+  bottom: -150px;
+  z-index: 100;
+  /* float: left; */
+}
+.accor .body p {
+  float: left;
+  padding: 7px;
+  border-bottom: 1px solid white;
+  color: white;
+  width: 100%;
+  text-transform: uppercase;
+}
+/* .accor .body p:hover {
+  transition: 0.4s;
+  color: lightgray;
+} */
+.accor.active > .body {
+  padding: 10px 20px;
+  /* max-height: 200%; */
+  min-height: 550px;
+  overflow: auto;
+}
+
+.noselect {
+  -webkit-touch-callout: none; /* iOS Safari */
+  -webkit-user-select: none; /* Safari */
+  -khtml-user-select: none; /* Konqueror HTML */
+  -moz-user-select: none; /* Firefox */
+  -ms-user-select: none; /* Internet Explorer/Edge */
+  user-select: none; /* Non-prefixed version, currently
+                                    supported by Chrome and Opera */
+}
+@media screen and (max-width: 700px) {
+  .accor .body {
+    bottom: -200px;
+  }
+}
+
+@media screen and (max-width: 400px) {
+  .accor .body {
+    bottom: -210px;
+  }
+}

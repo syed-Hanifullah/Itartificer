@@ -1,0 +1,175 @@
+.parent {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  grid-template-rows: repeat(7, 1fr);
+  grid-column-gap: 10px;
+  grid-row-gap: 20px;
+  padding: 20px;
+}
+.div1 {
+  border: 1px solid #ddd;
+  grid-area: 1 / 1 / 8 / 5;
+}
+.div2 {
+  border: 1px solid #ddd;
+  grid-area: 1 / 5 / 2 / 6;
+}
+.div3 {
+  border: 1px solid #ddd;
+  grid-area: 2 / 5 / 4 / 6;
+}
+.div4 {
+  grid-area: 4 / 5 / 6 / 6;
+  border: 1px solid #ddd;
+}
+.div5 {
+  grid-area: 6 / 5 / 8 / 6;
+  border: 1px solid #ddd;
+}
+@media screen and (max-width: 600px) {
+  .parent {
+    display: block;
+  }
+  .div1 {
+    display: block;
+    margin: 10px;
+    padding: 10px;
+  }
+  .div2 {
+    display: block;
+    margin: 10px;
+    padding: 10px;
+  }
+  .div3 {
+    display: block;
+    margin: 10px;
+    padding: 10px;
+  }
+  .div4 {
+    display: block;
+    margin: 10px;
+    padding: 10px;
+  }
+  .div5 {
+    display: block;
+    margin: 10px;
+    padding: 10px;
+  }
+}
+.courseName {
+  font-size: 20px;
+  letter-spacing: 0px;
+  border-bottom: 0px;
+  padding-bottom: 0px;
+  font-weight: 400;
+  margin-left: 15px;
+  background-color: #fff;
+  color: #6e6e6e;
+}
+
+.subsides {
+  font-size: 27px;
+  letter-spacing: 0px;
+  border-bottom: 0px;
+  padding-bottom: 0px;
+  font-weight: 400;
+  margin-left: 15px;
+}
+.subHeading {
+  font-size: 27px;
+  color: #121212;
+  font-family: "Open Sans", sans-serif;
+  font-weight: 600;
+  margin-left: 20px;
+  text-transform: uppercase;
+}
+.subsidesSubText {
+  background-color: #fff;
+  color: #6e6e6e;
+  font-size: 18px;
+  line-height: 24px;
+  margin: 0;
+  font-family: "Open Sans", sans-serif;
+  margin-left: 15px;
+}
+
+.shareBtns {
+  font-size: 15px;
+  font-weight: 500;
+  float: left;
+  margin-left: -50px !important;
+}
+.btns {
+  display: flex;
+}
+.btns button {
+  padding: 5px;
+  margin: 10px;
+}
+
+input {
+  height: auto;
+  margin: 0;
+  width: 100%;
+  padding: 12px 4% 11px 10px;
+  width: 100%;
+  margin: 0;
+  height: auto;
+  box-sizing: border-box;
+  line-height: 1;
+  border-radius: 0px;
+  -webkit-appearance: none;
+  -webkit-border-radius: 0;
+  color: #666;
+  border: 1px solid #ccc;
+  /* margin: 5px; */
+}
+input:focus {
+  background-color: rgb(236, 234, 235);
+}
+
+.searchbtn {
+  width: 100%;
+  padding: 10px;
+  font-size: 19px;
+  background-color: #1a2d51;
+  color: #ddd;
+  transition: 0.5s ease-in-out;
+}
+.searchbtn:hover {
+  background-color: #ddd;
+  color: #1a2d51;
+}
+.aboutSubText {
+  background-color: #fff;
+  color: #6e6e6e;
+  font-size: 18px;
+  line-height: 24px;
+  margin: 0;
+  font-family: "Open Sans", sans-serif;
+  margin-left: 15px;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+  width: 100%;
+  border: 1px solid #ddd;
+  color: gray;
+}
+
+th,
+td {
+  text-align: left;
+  padding: 8px;
+  border: 1px solid #ddd;
+}
+td:nth-child(1) {
+  color: black;
+  font-size: 20px;
+}
+tr:nth-child(1) {
+  color: black;
+  font-size: 20px;
+  color: gray;
+}

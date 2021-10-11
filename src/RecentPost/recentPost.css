@@ -1,0 +1,154 @@
+.partners {
+  max-width: 100%;
+  height: 70vh;
+  background-color: #ededed;
+}
+
+.heading {
+  color: #303133;
+  display: block;
+  text-align: center;
+  font-size: 35px;
+  font-weight: 400;
+  margin-top: 50px !important;
+  padding-top: 70px;
+  padding-left: 0;
+  text-transform: capitalize;
+  letter-spacing: 1px;
+  line-height: 1;
+}
+
+@media screen and (max-width: 500px) {
+  .partners {
+    margin-top: 1950px;
+  }
+}
+
+.seperator {
+  margin-bottom: 5px;
+  float: left;
+  width: 100%;
+  text-align: center;
+  display: flex;
+}
+.seperator span:before {
+  background-color: #ddd;
+  content: "";
+  height: 1px;
+  left: 42%;
+  width: 60px;
+  position: absolute;
+}
+.seperator span:after {
+  background-color: #ddd;
+  content: "";
+  height: 1px;
+  left: 53%;
+  width: 60px;
+  position: absolute;
+}
+@media screen and (max-width: 1000px) {
+  .seperator span:before {
+    left: 39%;
+  }
+}
+@media screen and (max-width: 600px) {
+  .seperator span:before {
+    left: 35%;
+  }
+  .seperator span:after {
+    left: 54%;
+  }
+}
+@media screen and (max-width: 400px) {
+  .seperator span:before {
+    left: 28%;
+  }
+  .seperator span:after {
+    left: 59%;
+  }
+}
+
+.parentDIV {
+  justify-content: center;
+  display: grid;
+  grid-template-columns: repeat(7, 1fr);
+  grid-template-rows: repeat(4, 1fr);
+  grid-column-gap: 10px;
+  /* grid-row-gap: 10px; */
+  /* margin-left: -100px; */
+  margin-top: 80px;
+}
+.divI,
+.divII,
+.divIII,
+.divIV,
+.divV > img {
+  max-width: 100%;
+  filter: brightness(90%);
+}
+.divI {
+  grid-area: 1 / 1 / 5 / 4;
+}
+.divII {
+  grid-area: 1 / 4 / 3 / 6;
+}
+.divIII {
+  grid-area: 1 / 6 / 3 / 8;
+}
+.divIV {
+  grid-area: 3 / 4 / 5 / 6;
+}
+.divV {
+  grid-area: 3 / 6 / 5 / 8;
+}
+@media screen and (max-width: 700px) {
+  .parentDIV {
+    display: block;
+    margin-left: 0;
+    align-items: center;
+  }
+}
+
+/* .wrapper {
+  margin-top: -43px !important;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-auto-rows: minmax(100px, auto);
+}
+.wrapper img {
+  max-width: 100%;
+  filter: brightness(70%);
+}
+.one {
+  grid-column: 1 / 3;
+  grid-row: 1;
+}
+.two {
+  grid-column: 2;
+  grid-row: 3;
+}
+.three {
+  grid-column: 1;
+  grid-row: 3 / 5;
+}
+.four {
+  grid-column: 3;
+  grid-row: 3;
+}
+.five {
+  grid-column: 2;
+  grid-row: 4;
+}
+.six {
+  grid-column: 3;
+  grid-row: 4;
+} */
+
+@media screen and (max-width: 600px) {
+  .wrapper {
+    display: block;
+    padding: 50px;
+    text-align: center;
+  }
+}

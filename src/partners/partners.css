@@ -1,0 +1,82 @@
+.partners {
+  max-width: 100%;
+  height: 70vh;
+  background-color: #ededed;
+}
+
+.heading {
+  color: #303133;
+  display: block;
+  text-align: center;
+  font-size: 35px;
+  font-weight: 400;
+  margin-top: 50px !important;
+  padding-top: 70px;
+  padding-left: 0;
+  text-transform: capitalize;
+  letter-spacing: 1px;
+  line-height: 1;
+}
+
+@media screen and (max-width: 500px) {
+  .partners {
+    margin-top: 1950px;
+  }
+}
+
+.seperator {
+  margin-bottom: 5px;
+  float: left;
+  width: 100%;
+  text-align: center;
+  display: flex;
+}
+.seperator span:before {
+  background-color: #ddd;
+  content: "";
+  height: 1px;
+  left: 42%;
+  width: 60px;
+  position: absolute;
+}
+.seperator span:after {
+  background-color: #ddd;
+  content: "";
+  height: 1px;
+  left: 53%;
+  width: 60px;
+  position: absolute;
+}
+@media screen and (max-width: 1000px) {
+  .seperator span:before {
+    left: 39%;
+  }
+}
+@media screen and (max-width: 600px) {
+  .seperator span:before {
+    left: 35%;
+  }
+  .seperator span:after {
+    left: 54%;
+  }
+}
+@media screen and (max-width: 400px) {
+  .seperator span:before {
+    left: 28%;
+  }
+  .seperator span:after {
+    left: 59%;
+  }
+}
+
+.subText {
+  color: #6e6e6e;
+  font-size: 15px;
+  padding-top: 30px !important;
+  display: block;
+  text-align: center;
+}
+
+.slider {
+  padding-top: 40px;
+}

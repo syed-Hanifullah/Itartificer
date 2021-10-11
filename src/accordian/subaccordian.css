@@ -1,0 +1,51 @@
+.plusMinus {
+  display: inline;
+  color: white;
+  font-size: 30px;
+  float: right;
+  margin-top: -80px;
+  border-left: 1px solid white;
+  padding: 10px;
+  padding-right: 20px;
+}
+
+.accordion-content a {
+  transition: 0.4s;
+  transition: 200ms ease-in-out;
+  text-decoration: none;
+  color: white;
+  display: grid;
+  padding: 7px;
+  text-transform: uppercase;
+  margin-left: 150px !important;
+  cursor: pointer;
+}
+
+@media screen and (max-width: 550px) {
+  .accordion-content a {
+    margin-left: 50px !important;
+  }
+}
+.accordion-content a:hover {
+  color: lightgray;
+  /* border-bottom: 1px solid white; */
+}
+
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: #f1f1f1;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #888;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #555;
+}
